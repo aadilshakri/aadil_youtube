@@ -1,0 +1,18 @@
+<p> jgvj</p>
+ 
+<div class="row">
+    <div class="col-sm-4" *ngFor="let favourite of favourites">
+        <div class="card">
+            <a href="https://www.youtube.com/watch?v={{favourite.id.videoId}}" target="_blank">
+                <img [src]="favourite.snippet.thumbnails.high.url" class="card-img-top" alt="..."></a>
+            <div class="card-header">
+                <a href="https://www.youtube.com/watch?v={{favourite.id.videoId}}">{{favourite.snippet.title}}
+                </a>
+            </div>
+            <div class="card-body">
+                {{favourite.snippet.description.slice(0, 100)}}
+            </div>
+            <button class="btn btn-danger" (click)="removeFavVideos(vId)">Remove</button>
+        </div>
+    </div>
+</div>

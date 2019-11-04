@@ -1,0 +1,21 @@
+h3{
+    color: aliceblue;
+}
+
+.container{
+    display: flex;
+    background: grey;
+}
+
+.card{
+    background: rgb(228, 48, 48);
+}
+.card-text{
+    color: aliceblue;
+}
+
+a{
+    
+    color: black;
+    
+}

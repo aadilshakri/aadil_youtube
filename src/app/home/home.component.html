@@ -1,0 +1,19 @@
+
+<p></p>
+<h3>All Videos</h3>
+<p></p>
+<div class="row">
+    <div class="col-sm-4" *ngFor="let video of videos">
+        <div class="card" style="width: 20rem;">
+            <a href="https://www.youtube.com/watch?v={{video.id.videoId}}" target="_blank">
+                <img [src]="video.snippet.thumbnails.medium.url" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+                <h5 class="card-title"><a href="https://www.youtube.com/watch?v={{video.id.videoId}}">{{video.snippet.title}}
+                    </a>
+                </h5>
+                <button class="btn btn-primary" (click)="addtoFavourites(video)">Add To Favourites</button>
+            </div>
+        </div>
+    </div>
+</div>
+
